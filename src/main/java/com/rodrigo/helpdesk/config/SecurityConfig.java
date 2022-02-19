@@ -22,7 +22,7 @@ import com.rodrigo.helpdesk.security.JWTAuthorizationFilter;
 import com.rodrigo.helpdesk.security.JWTUtil;
 
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(prePostEnabled = true ,securedEnabled = true)
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	private static final String[] PUBLIC_MATCHERS = { "/h2-console/**" };
